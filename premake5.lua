@@ -23,12 +23,12 @@ project "yaml-cpp"
 		"YAML_CPP_STATIC_DEFINE"
 	}
 
-	filter "system:windows"
+    filter "options:target=windows"
 		systemversion "latest"
 		cppdialect "C++17"
 		staticruntime "off"
 
-	filter "system:linux"
+    filter "options:target=linux"
 		pic "On"
 		systemversion "latest"
 		cppdialect "C++17"
